@@ -52,20 +52,18 @@ header {
   width: 100%;
 } */
 
-/* ul {
+ul {
   list-style-type: none;
+
+  li {
+    margin-bottom: 4px;
+  }
   
   a {
       text-decoration: none;
       color: white;
-      margin-right: 5px;
-  }
-
-  li:last-child a {
-      margin-right: 0;
-  }
-  
-} */
+  }  
+}
 
 /* Utilities */
 .top-content {
@@ -76,4 +74,13 @@ header {
 /* imposta una stessa dimensione per tutti i figli di flex */
 .children-flex-basis > * {
  flex-basis: 30%;
+}
+
+/* in side-nav */
+#nav-header {
+  height: auto;
+}
+
+#nav-contents {
+  flex-grow: 1;
 }
