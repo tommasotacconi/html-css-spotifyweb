@@ -84,3 +84,7 @@ ul {
 #nav-contents {
   flex-grow: 1;
 }
+
+#playlists {
+  display: none;
+}

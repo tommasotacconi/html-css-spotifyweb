@@ -31,12 +31,17 @@
 }
 
 /* alignment */
-.text-align-center {
+.txt-align-center {
   text-align: center;
 }
 
-.text-align-right{
+.txt-align-right{
   text-align: right;
+}
+
+/* assegna text-align center ai figli */
+.children-txt-align-center {
+  text-align: center;
 }
 
 /* type of container */
