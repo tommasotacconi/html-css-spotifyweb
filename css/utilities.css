@@ -176,7 +176,7 @@
   align-items: center;
 }
 
-.f-column {
+.flex-column {
   display: flex;
   flex-direction: column;
 }
