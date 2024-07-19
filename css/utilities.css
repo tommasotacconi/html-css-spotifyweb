@@ -59,7 +59,7 @@
 }
 
 .dashed-border-alternative {
-  border: 3px dashed hotpink;
+  border: 1px dashed hotpink;
 }
 
 .separator-div {
@@ -114,7 +114,7 @@
 }
 
 /* assegna display:flex ai figli diretti */
-.childs-d-flex- > * {
+.children-d-flex- > * {
   display: flex;
 }
 
@@ -132,7 +132,7 @@
 }
 
 /* centra il contenuto dei propri figli */
-.childs-flex-row-center > * {
+.child-flex-row-center > * {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +144,7 @@
 }
 
 /* da ai propri figli flex-row-space-between */
-.childs-flex-row-space-between > * {
+.children-flex-row-space-between > * {
   display: flex;
   justify-content: space-between;
 }
@@ -190,7 +190,7 @@
 /*  */
 
 /* hover effect */
-.childs-border-onhover li:hover a:not(#logo-anchor) {
+.children-border-onhover li:hover a:not(#logo-anchor) {
   border-bottom: 1.6px solid black;
 }
 

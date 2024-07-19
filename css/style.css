@@ -71,3 +71,9 @@ header {
 .top-content {
   flex-grow: 1;
 }
+
+/* in footer */
+/* imposta una stessa dimensione per tutti i figli di flex */
+.children-flex-basis > * {
+ flex-basis: 30%;
+}
