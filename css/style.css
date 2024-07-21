@@ -68,6 +68,7 @@ ul {
 /* Utilities */
 .top-content {
   flex-grow: 1;
+  max-height: calc(100vh - var(--fr-ht));
 }
 
 /* in footer */
@@ -77,14 +78,28 @@ ul {
 }
 
 /* in side-nav */
-#nav-header {
+#side-nav {
+  height: 100%;
+}
+
+#snav-header {
   height: auto;
 }
 
-#nav-contents {
+#snav-contents {
+  overflow: hidden;
+
+  #spotify-sections {
+    flex-basis: fit-content;
+  }
+
+  #playlists {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+#snav-footer {
   flex-grow: 1;
 }
 
-#playlists {
-  display: none;
-}
