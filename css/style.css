@@ -20,7 +20,7 @@ body {
 footer {
   height: var(--fr-ht);
   padding: var(--pd-m);
-  color: white;
+  color: #33a42b;
 }
 
 nav {
@@ -82,24 +82,23 @@ ul {
   height: 100%;
 }
 
-#snav-header {
-  height: auto;
+#snav-header, #snav-footer {
+  flex-basis: max-content;
 }
 
 #snav-contents {
+  flex: 1;
   overflow: hidden;
 
-  #spotify-sections {
-    flex-basis: fit-content;
-  }
-
   #playlists {
-    overflow-y: scroll;
+    flex-basis: 1;
+    overflow-y: auto;
     overflow-x: hidden;
   }
 }
 
-#snav-footer {
-  flex-grow: 1;
+/* in main */
+#main-contents {
+  padding: var(--pd-sm);
+  overflow-y: scroll;
 }
-

@@ -7,7 +7,6 @@
   --sec-pd-xl: 50px;
   --sec-pd-xxl: 100px;
   --sec-pd-xxxl: 130px;
-  --pd-sm: 10px;
 }
 
   /* var min-height */
@@ -21,6 +20,7 @@
 
 /* general padding */
 :root {
+  --pd-sm: 10px;
   --pd-md: 20px;
   --pd-lg: 30px;
   --pd-xl: 50px;
