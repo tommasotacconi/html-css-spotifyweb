@@ -100,10 +100,19 @@ main {
 }
 
 main header {
+  padding-right: var(--sec-pd-lg);
   position: sticky;
   left: 0;
   top: 0;
   width: 100%;
+  line-height: var(--fr-ht);
+  text-align: right;
+}
+
+.button-box {
+  display: inline-block;
+  width: 160px;
+  text-align: center;
 }
 
 #main-contents {

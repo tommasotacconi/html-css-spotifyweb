@@ -74,13 +74,14 @@
 }
 
 /* type of button */
+/* (squared) */
 .btn {
   font-size: 16px;
   padding: 7px 12px;
   border: 0;
 }
 
-.btn-mouse-on:hover {
+.btn-hov:hover {
   background-color: #3b7cff;
   border: 2px solid whitesmoke;
   padding: 5.4px 10.4px;
@@ -95,11 +96,30 @@
   border: 0;
 }
 
-.btn-big-mouse-on:hover {
+.btn-big-hov:hover {
   background-color: #eaeaea;
   border: 1px solid #6b84de;
   padding: 15px 21px;
   border-radius: 25px;
+  cursor: pointer;
+}
+
+/* (round) */
+.btn-rd {
+  font-size: 1rem;
+  color: white;
+  padding: 7px 12px;
+  border: 2px solid #fff;
+  border-radius: 26px;
+  background-color: transparent;
+}
+
+.btn-rd-hov:hover {
+  font-size: 17px;
+  /* background-color: #3b7cff; */
+  border: 2px solid whitesmoke;
+  border-radius: 30px;
+  padding: 7px 13px;
   cursor: pointer;
 }
 
