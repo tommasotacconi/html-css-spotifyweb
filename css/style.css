@@ -36,10 +36,6 @@ header {
   height: var(--fr-ht);
 }
 
-#main-contents {
-  height: calc(100% - var(--fr-ht))
-}
-
 /* nav > div{
   padding: var(--nav-pd)
 } */
@@ -98,7 +94,18 @@ ul {
 }
 
 /* in main */
+main {
+  position: relative;
+  overflow-y: auto;
+}
+
+main header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 #main-contents {
   padding: var(--pd-sm);
-  overflow-y: scroll;
 }
