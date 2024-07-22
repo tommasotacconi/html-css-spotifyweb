@@ -50,7 +50,6 @@
               <li><a href="">Nome playlist</a></li>
               <li><a href="">Nome playlist</a></li>
             </ul>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure ipsam, quisquam neque quam architecto nobis eligendi eos voluptatibus provident repudiandae beatae quo totam, fugit sunt modi maiores delectus sint. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquam, veritatis reprehenderit quam corrupti vitae placeat.
           </section>
         </div>
         <footer id="snav-footer" class="dashed-border-alternative">
@@ -154,24 +153,49 @@
     </div>
 
     <!-- Footer con traccia in ascolto e pannello di controllo -->
-    <footer class="flex-row-space-between f-align-center children-flex-basis bdcolor-deep-blue">
-      <div class="side-content dashed-border-alternative">
-        <figure>copertina album</figure>
+    <footer class="flex-row-spb f-alcenter children-flex-basis fr-bdc">
+      <!--  -->
+      <div class="side-content left d-flex f-alcenter">
+        <img src="img/sinister.jpeg" alt="sinister album image">          
         <div class="info-track">
-          nome album<br>
-          nome brano
+          <span>Sinister</span><br>
+          <span>Brano Nome</span>
         </div>         
+        <div class="fav-save-buttons">
+          <ul>
+            <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-folder"></i></a></li>
+          </ul>
+        </div> 
       </div>
-      <div class="central-content dashed-border-alternative">
+      <div class="central-content">
         <div class="player-button">
-          simboli controlli
+          <ul class="flex-row-spb f-alcenter">
+            <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
+            <li><a href="#"><i class="fa-regular fa-circle-play"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
+            <li><a href="#"></a><i class="fa-solid fa-rotate-right"></i></li>
+          </ul>
         </div>
-        <div class="track-progress">
-          barra di avanzamento traccia
+        <div class="track-progress flex-row-spb f-alcenter">
+          <div class="track-time">0:25</div>
+          <div class="track-bar">
+            <div class="percentual-bar"></div>
+          </div>
+          <div class="time-to-end">4:35</div>
         </div>
       </div>
-      <div class="side-content dashed-border-alternative">
-        altri comandi e barra di volume
+      <!--  -->
+      <div class="side-content right d-flex f-alcenter f-end">
+        <ul class="d-flex">
+          <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-desktop"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-volume-low"></i></a></li>
+        </ul>
+        <div class="vol-bar">
+          <div class="percentual-bar"></div>
+        </div>
       </div>
     </footer>
   </body>

@@ -6,10 +6,16 @@
 }
 
 /* Generics */
-/* fixed dimension */
 :root {
+  /* fixed dimension */
   --fr-ht: 120px;
   --snav-wh: 50px;
+
+  /*obscured effect  */
+  --obs: #949494;
+
+  /* percent-bar */
+  --pbar: #eee;
 }
 /*  */
 
@@ -20,8 +26,9 @@ body {
 
 footer {
   height: var(--fr-ht);
-  padding: var(--pd-m);
-  color: #33a42b;
+  padding: var(--pd-sm);
+  color: #fff;
+
 }
 
 nav {
@@ -44,16 +51,16 @@ header {
   margin: 0 5px;
 } */
 
-/* img {
+img {
   width: 100%;
-} */
+}
 
 ul {
   list-style-type: none;
 
-  li {
+  /* li {
     margin-bottom: 4px;
-  }
+  } */
   
   a {
       text-decoration: none;
@@ -65,6 +72,11 @@ h1 {
   margin-top: 30px;
 }
 
+/* background-color */
+.fr-bdc {
+  background-color: #353535;
+}
+
 /* Utilities */
 .top-content {
   height: calc(100vh - var(--fr-ht));
@@ -73,7 +85,88 @@ h1 {
 /* in footer */
 /* imposta una stessa dimensione per tutti i figli di flex */
 .children-flex-basis > * {
- flex-basis: 30%;
+ flex-basis: 33.33%;
+}
+
+.percentual-bar {
+  height: 100%;
+  border-radius: 3px;
+  background-color: var(--pbar);
+}
+
+/* side-content on the left */
+.side-content.left{
+  img {
+   display: block;
+   width: auto;
+   height: calc(var(--fr-ht ) / 2);
+  }
+
+  .info-track {
+   display: inline-block;
+   margin-left: 6px;
+   margin-right: 15px;
+
+   span{
+     font-size: 1.2rem;
+     font-weight: 600;
+   }
+ 
+   span:last-child {
+     font-size: 0.8rem;
+     color: var(--obs);
+   };
+  }
+
+  .fav-save-buttons a{
+    color: var(--obs);
+  }
+ }
+
+/* side-content on the right */
+.side-content.right {
+  li {
+    margin-right: 10px
+  }
+
+  .vol-bar {
+    width: 80px;
+    height: 4px;
+    background-color: var(--obs);
+    border-radius: 2px;
+
+    .percentual-bar {
+      width: 30%;
+    }
+  }
+}
+
+.central-content{
+  ul{
+    width: 100%;
+    font-size: 1.4rem;
+  } 
+
+  .fa-circle-play {
+    font-size: 2.4rem;
+  }
+
+  .track-progress {
+    font-size: 0.7rem;
+
+    .track-bar {
+      width: 80%;
+      height: 4px;
+      background-color: var(--obs);
+      border-radius: 3px;
+      margin: 20px 8px;
+
+      .percentual-bar {
+        width: 10%;
+      }
+    }
+  }
+  
 }
 
 /* in side-nav */

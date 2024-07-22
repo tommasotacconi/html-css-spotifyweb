@@ -164,7 +164,7 @@
   align-items: center;
 }
 
-.flex-row-space-between {
+.flex-row-spb {
   display: flex;
   justify-content: space-between;
 }
@@ -175,7 +175,7 @@
   justify-content: space-between;
 }
 
-.flex-row-space-around {
+.flex-row-spa {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -185,7 +185,7 @@
   justify-content: center;
 }
 
-.f-align-center {
+.f-alcenter {
   align-items: center;
 }
 
