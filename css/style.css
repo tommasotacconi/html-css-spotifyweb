@@ -85,7 +85,7 @@ h1 {
 /* in footer */
 /* imposta una stessa dimensione per tutti i figli di flex */
 .children-flex-basis > * {
- flex-basis: 33.33%;
+ flex-basis: 32%;
 }
 
 .percentual-bar {
@@ -105,10 +105,9 @@ h1 {
   .info-track {
    display: inline-block;
    margin-left: 6px;
-   margin-right: 15px;
 
    span{
-     font-size: 1.2rem;
+     font-size: 1.05rem;
      font-weight: 600;
    }
  
