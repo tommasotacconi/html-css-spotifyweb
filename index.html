@@ -24,19 +24,28 @@
 
     <!-- box contenente navbar laterale e main -->
     <div class="top-content bdcolor-blu-tenue d-flex">
-      <nav id="side-nav" class="flex-column bdcolor-pesca children-text-align-center">
-        <header id="snav-header" class="dashed-border-alternative">
-          Logo spotify
+      <nav id="side-nav" class="flex-column snav-bdc txt-alcenter">
+        <header id="snav-header" class="">
+          <img src="img/logo-small.svg" alt="">
         </header>
-        <div id="snav-contents" class="flex-column dashed-border-alternative bdcolor-argento">
+        <div id="snav-contents" class="flex-column ">
           <section id="spotify-sections">
             <ul>
-              <li><a href="">schermata di base</a></li>
-              <li><a href="">sezione cerca</a></li>
-              <li><a href="">sezione libreria</a></li>
+              <li class="home">
+                <a href=""><img src="/img/home.svg" alt=""></a>
+                <a href="#" class="d-none">Home</a>
+              </li>
+              <li class="search">
+                <a href=""><img src="/img/search.svg" alt=""></a>
+                <a href="#" class="d-none">Cerca</a>
+              </li>
+              <li class="library">
+                <a href=""><img src="/img/libreria.svg" alt=""></a>
+                <a href="#" class="d-none">La tua libreria</a>
+              </li>
             </ul>
           </section>
-          <section id="playlists">
+          <section id="playlists" class="d-none">
             <ul>
               <li><a href="">Crea playlist</a></li>
               <li><a href="">Nome playlist</a></li>
@@ -52,9 +61,16 @@
             </ul>
           </section>
         </div>
-        <footer id="snav-footer" class="dashed-border-alternative">
-          download button<br>
-          foto profilo          
+        <footer id="snav-footer" class="">
+          <div class="box-download-btn">
+            <img src="/img/download.svg" alt="">
+          </div>
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="img/profile.svg" alt="">
+            </div>
+            <span class="d-none">Jhon Doe</span>
+          </div>          
         </footer>
       </nav>
 

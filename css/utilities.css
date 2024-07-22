@@ -32,11 +32,11 @@
 }
 
 /* alignment */
-.txt-align-center {
+.txt-alcenter {
   text-align: center;
 }
 
-.txt-align-right{
+.txt-alright{
   text-align: right;
 }
 
@@ -129,9 +129,14 @@
   color: #2600ff;
 }
 
-/* assegna il bordo ai figli diretti */
+/* assign border to direct children */
 .children-thin-border > * {
   border: 1px solid lightgray;
+}
+
+/* display class */
+.d-none {
+  display: none;
 }
 
 /* flex configuration */

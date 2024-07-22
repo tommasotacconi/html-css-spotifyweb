@@ -31,8 +31,12 @@ footer {
 
 }
 
-nav {
+#side-nav {
+  width: var(--snav-wh);
+  flex-shrink: 0;
   padding: var(--nav-pd);
+  overflow-y: auto;
+  overflow-x: hidden; 
 }
 
 main {
@@ -75,6 +79,10 @@ h1 {
 /* background-color */
 .fr-bdc {
   background-color: #353535;
+}
+
+.snav-bdc {
+  background-color: #000;
 }
 
 /* Utilities */
@@ -164,20 +172,16 @@ h1 {
         width: 10%;
       }
     }
-  }
-  
+  } 
 }
 
 /* in side-nav */
-#side-nav {
-  width: var(--snav-wh);
-  overflow-y: auto;
-  overflow-x: hidden; 
-
-}
-
 #snav-header, #snav-footer {
   flex-basis: max-content;
+}
+
+#snav-header img{
+  width: 80%;
 }
 
 #snav-contents {
@@ -190,6 +194,48 @@ h1 {
     overflow-x: hidden;
   }
 }
+
+#snav-contents #spotify-sections ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin-top: 10px;
+
+  img {
+    width: 70%;
+  }
+}
+
+#snav-footer {
+  padding: 0;
+  
+  .box-download-btn {
+    margin-bottom: 15px;
+
+    img {
+      width: 70%;
+      margin-left: -4px;
+    }    
+  }
+  
+
+  .profile-box {
+    img {
+      width: 70%;
+    }
+
+    .profile-img{
+      width: 80%;
+      border-radius: 50%;
+      padding: 2px 0;
+      background-color: #aaa;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* #spotify-sections ul li::marker {
+  margin-left: 5.6px;
+} */
 
 /* in main */
 main {
