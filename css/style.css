@@ -8,7 +8,8 @@
 /* Generics */
 /* fixed dimension */
 :root {
-  --fr-ht: 120px
+  --fr-ht: 120px;
+  --snav-wh: 50px;
 }
 /*  */
 
@@ -24,7 +25,6 @@ footer {
 }
 
 nav {
-  width: 50px;
   padding: var(--nav-pd);
 }
 
@@ -61,6 +61,10 @@ ul {
   }  
 }
 
+h1 {
+  margin-top: 30px;
+}
+
 /* Utilities */
 .top-content {
   flex-grow: 1;
@@ -75,6 +79,7 @@ ul {
 
 /* in side-nav */
 #side-nav {
+  width: var(--snav-wh);
   height: 100%;
 }
 
@@ -116,5 +121,16 @@ main header {
 }
 
 #main-contents {
-  padding: var(--pd-sm);
+  padding: var(--pd-md);
+}
+
+.col{
+  width: 50%;
+  min-height: var(--mh-md);
+  border: 1px solid goldenrod;
+}
+
+.card {
+  background-color: plum;
+  height: 100%;
 }
