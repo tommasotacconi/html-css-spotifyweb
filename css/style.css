@@ -87,7 +87,7 @@ ul {
   overflow: hidden;
 
   #playlists {
-    flex-basis: 1;
+    flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
   }
