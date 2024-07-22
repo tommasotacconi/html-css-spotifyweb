@@ -67,8 +67,7 @@ h1 {
 
 /* Utilities */
 .top-content {
-  flex-grow: 1;
-  max-height: calc(100vh - var(--fr-ht));
+  height: calc(100vh - var(--fr-ht));
 }
 
 /* in footer */
@@ -80,7 +79,9 @@ h1 {
 /* in side-nav */
 #side-nav {
   width: var(--snav-wh);
-  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; 
+
 }
 
 #snav-header, #snav-footer {
