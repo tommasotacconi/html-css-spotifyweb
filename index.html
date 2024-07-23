@@ -32,40 +32,41 @@
         <div id="snav-contents" class="flex-column ">
           <section id="spotify-sections">
             <ul>
-              <li class="home sm-d-flex ">
-                <a class="sm-d-inblock">
+              <li class="home">
+                <a href="#" class="sm-d-block sm-d-flex f-alcenter">
                   <img src="/img/home.svg" alt="">
-                  <span class="d-none sm-d-block">Home</span>
+                  <span class="d-none sm-d-inline">Home</span>
                 </a>
               </li>
               <li class="search">
-                <a href="" class="sm-d-inblock"><img src="/img/search.svg" alt=""></a>
-                <a href="#" class="d-none sm-d-block">Cerca</a>
+                <a href="#" class="sm-d-block sm-d-flex f-alcenter">
+                  <img src="/img/search.svg" alt="">
+                  <span class="d-none sm-d-inline">Cerca</span>
+                </a>
               </li>
               <li class="library">
-                <a href="" class="sm-d-inblock"><img src="/img/libreria.svg" alt=""></a>
-                <a href="#" class="d-none sm-d-block">La tua libreria</a>
+                <a href="#" class="sm-d-block sm-d-flex f-alcenter">
+                  <img src="/img/libreria.svg" alt="">
+                  <span class="d-none sm-d-inline">La tua libreria</span>
+                </a>
               </li>
             </ul>
           </section>
           <section id="playlists" class="d-none sm-d-block">
             <h2>PLAYLIST</h2>
             <a class="create-playlist" href="">
-              <i class="fa-solid fa-square-plus"></i>
-              Crea playlist
+              <i class="fa-solid fa-plus"></i>
+              <span>Crea playlist</span> 
             </a>
-            <ul>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-              <li><a href="">Nome playlist</a></li>
-            </ul>
+            <div id="all-playlists">              
+              <ul>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>                
+              </ul>
+            </div>
           </section>
         </div>
         <footer id="snav-footer" class="">
@@ -227,7 +228,7 @@
 
     <!-- Footer con traccia in ascolto e pannello di controllo -->
     <footer class="flex-row-spb f-alcenter children-fbasis fr-bdc">
-      <!--  -->
+      <!-- contenuto laterale -->
       <div class="side-content left d-flex f-alcenter">
         <img src="img/sinister.jpeg" alt="sinister album image">          
         <div class="info-track">
@@ -242,7 +243,7 @@
         </div> 
       </div>
       <div class="central-content">
-        <div class="player-button">
+        <div class="player-buttons">
           <ul class="flex-row-spb f-alcenter">
             <li><a href="#"><i class="fa-solid fa-shuffle"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
@@ -259,7 +260,7 @@
           <div class="time-to-end">4:35</div>
         </div>
       </div>
-      <!--  -->
+      <!-- contenuto laterale -->
       <div class="side-content right d-flex f-alcenter f-end">
         <ul class="d-flex">
           <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
@@ -273,3 +274,5 @@
     </footer>
   </body>
 </html>
+
+<!-- commit finale -->

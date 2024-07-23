@@ -7,10 +7,12 @@
 
 /* Generics */
 :root {
+  font-size: 14px;
   /* fixed dimension */
   --fr-ht: 120px;
   --snav-wh-collap: 50px;
   --sanv-wh-expan: 250px;
+
   /*obscured effect  */
   --obs: #949494;
   --opa: 0.6;
@@ -72,17 +74,12 @@ img {
 
 ul {
   list-style-type: none;
-
-  /* li {
-    margin-bottom: 4px;
-  } */
-  
-  a {
-      text-decoration: none;
-      color: var(--obs);
-      margin: 15px;
-  }  
 }
+
+a {
+  text-decoration: none;
+  color: var(--obs);
+}  
 
 h1 {
   margin-top: 30px;
@@ -134,7 +131,7 @@ h1 {
    margin: 0 5px;
    flex-basis: min-content;
 
-   span{
+   span {
      font-size: 1.05rem;
      font-weight: 600;
    }
@@ -171,6 +168,11 @@ h1 {
 }
 
 .central-content{
+  .player-buttons {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+
   ul{
     width: 100%;
     font-size: 1.4rem;
@@ -212,8 +214,6 @@ h1 {
   }
 }
 
-
-
 #snav-contents {
   flex: 1;
   overflow-x: visible;
@@ -227,19 +227,27 @@ h1 {
     flex: 1;
     overflow: hidden;
 
-    a.create-playlist {
-      color: var(--obs);
-      text-decoration: none;
-      display: block;
+    h2 {
+      font-size: 1rem;
+      color: #fff;
+      margin-top: 25px;
     }
 
-    .fa-square-plus {
-      font-size: 3.5rem;
-      vertical-align: middle;
-      margin-right: 10px;
+    li{
+      margin-bottom: 20px;
     }
 
-    ul {
+    .fa-plus {
+      font-size: 2.5rem;
+      vertical-align: -25%;
+      margin: 10px 10px 20px 0;
+      color: #000;
+      background-color: var(--obs);
+      padding: 9px 12px;
+    }
+
+    #all-playlists {
+      height: calc(100% - 150px);
       overflow: auto;
     }
   }
@@ -249,10 +257,18 @@ h1 {
   list-style-type: none;
   list-style-position: inside;
   margin-top: 10px;
-
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
   img {
     width: 30px;
   }
+
+  span {
+    margin-left: 15px;
+  };
 }
 
 #snav-footer {
@@ -351,7 +367,7 @@ main header {
 
 /* RESPONSIVE */
 /* small dimension of visualized window  */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 580px) {
   /* generics */
   .sm-d-block {
     display: block;
@@ -376,7 +392,7 @@ main header {
   /* Principal layout elements */
   #side-nav {
     width: var(--sanv-wh-expan);
-    padding: var(--sec-pd-md);
+    padding: var(--sec-pd-sm);
     text-align: left;
     
     img {
@@ -385,19 +401,30 @@ main header {
   }
 
   /* in footer */
+  .side-content.left {
+    .info-track {
+      margin: 0 15px;
+      flex-basis: max-content;
+    }
+  }
+
+  /* in side nav */
   #snav-footer {
     .profile-box .profile-img {
       margin: 0;
     }
   }
-  /* in side nav */
-   
+
+  #snav-contents #spotify-sections ul {
+    margin-top: 30px;
+  }
+
 
   /* in main-contents */
 }
 
 /* medium dimension of visualized window */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 790px) {
   /* in footer */
 
   /* in side nav */
