@@ -20,6 +20,7 @@
 }
 /*  */
 
+/* Principal layout elements */
 body {
   font-family: Montserrat, 'Helvetica Neue', sans-serif;;
   height: 100vh;
@@ -42,10 +43,19 @@ footer {
 
 main {
   flex-grow: 1;
+
+  position: relative;
+  overflow-y: auto;
+
+  color: #fff;
 }
 
-header {
+main header {
   height: var(--fr-ht);
+}
+
+#main-contents {
+  padding: var(--pd-md);
 }
 
 /* nav > div{
@@ -84,6 +94,14 @@ h1 {
 
 .snav-bdc {
   background-color: #000;
+}
+
+.main-bdc {
+  background-color: #1a1725
+}
+
+.main-header-bdc {
+  background-color: #00000095;
 }
 
 /* Utilities */
@@ -250,19 +268,9 @@ h1 {
   }
 }
 
-/* #spotify-sections ul li::marker {
-  margin-left: 5.6px;
-} */
-
-/* in main */
-main {
-  position: relative;
-  overflow-y: auto;
-}
-
 /* in main header */
 main header {
-  padding-right: var(--sec-pd-lg);
+  padding-right: var(--sec-pd-sm);
   position: sticky;
   left: 0;
   top: 0;
@@ -278,8 +286,21 @@ main header {
 }
 
 /* in main contents */
-#main-contents {
-  padding: var(--pd-md);
+#maincont-nav {
+  a {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+
+#main-albums{
+  h1:first-of-type {
+    margin-top: 60px;
+  }
+}
+
+.subtitle {
+  color: var(--obs);
 }
 
 .col{
@@ -289,14 +310,10 @@ main header {
 }
 
 .card {
-  background-color: plum;
+  /* background-color: plum; */
   height: 100%;
 
   h2 {
     font-size: 1.1rem;
-  }
-
-  .subtitle {
-    color: var(--obs);
   }
 }

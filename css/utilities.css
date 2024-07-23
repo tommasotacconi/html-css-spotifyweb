@@ -2,7 +2,8 @@
 /* var tag padding */
 :root {
   --nav-pd: 5px;
-  --sec-pd-sm: 25px;
+  --sec-pd-sm: 15px;
+  --sec-pd-md: 30px;
   --sec-pd-lg: 40px;
   --sec-pd-xl: 50px;
   --sec-pd-xxl: 100px;
