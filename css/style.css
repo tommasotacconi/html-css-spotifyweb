@@ -56,7 +56,7 @@ header {
 } */
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 ul {
@@ -111,8 +111,8 @@ h1 {
   }
 
   .info-track {
-   display: inline-block;
-   margin-left: 6px;
+   margin: 0 5px;
+   flex-basis: min-content;
 
    span{
      font-size: 1.05rem;
@@ -125,10 +125,12 @@ h1 {
    };
   }
 
-  .fav-save-buttons a{
-    color: var(--obs);
+  .fav-save-buttons {
+    a {
+      color: var(--obs);
+    }
   }
- }
+}
 
 /* side-content on the right */
 .side-content.right {
