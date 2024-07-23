@@ -260,6 +260,7 @@ main {
   overflow-y: auto;
 }
 
+/* in main header */
 main header {
   padding-right: var(--sec-pd-lg);
   position: sticky;
@@ -276,6 +277,7 @@ main header {
   text-align: center;
 }
 
+/* in main contents */
 #main-contents {
   padding: var(--pd-md);
 }
@@ -289,4 +291,12 @@ main header {
 .card {
   background-color: plum;
   height: 100%;
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .subtitle {
+    color: var(--obs);
+  }
 }
