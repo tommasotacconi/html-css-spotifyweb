@@ -13,6 +13,7 @@
 
   /*obscured effect  */
   --obs: #949494;
+  --opa: 0.6;
 
   /* percent-bar */
   --pbar: #eee;
@@ -35,8 +36,8 @@ footer {
   width: var(--snav-wh);
   flex-shrink: 0;
   padding: var(--nav-pd);
-  overflow-y: auto;
-  overflow-x: hidden; 
+  overflow-x: visible;
+  color: var(--obs)
 }
 
 main {
@@ -68,7 +69,7 @@ ul {
   
   a {
       text-decoration: none;
-      color: white;
+      color: var(--obs);
   }  
 }
 
@@ -188,12 +189,21 @@ h1 {
 
 #snav-contents {
   flex: 1;
-  overflow: hidden;
+  overflow-x: visible;
+  overflow-y: hidden;
+
+  img {
+    opacity: var(--opa);
+  }
 
   #playlists {
     flex: 1;
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: hidden;
+
+    .fa-square-plus {
+      font-size: 3.5rem;
+    }
   }
 }
 
@@ -211,14 +221,19 @@ h1 {
   padding: 0;
   
   .box-download-btn {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     img {
       width: 70%;
       margin-left: -4px;
+      opacity: var(--opa);
     }    
   }
   
+  .separator-div {
+    border: 1px solid var(--obs);
+    margin-top: 0;
+  }
 
   .profile-box {
     img {

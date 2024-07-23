@@ -23,7 +23,7 @@
   <body>
 
     <!-- box contenente navbar laterale e main -->
-    <div class="top-content bdcolor-blu-tenue d-flex">
+    <div class="top-content d-flex">
       <nav id="side-nav" class="flex-column snav-bdc txt-alcenter">
         <header id="snav-header" class="">
           <img src="img/logo-small.svg" alt="">
@@ -47,7 +47,11 @@
           </section>
           <section id="playlists" class="d-none">
             <ul>
-              <li><a href="">Crea playlist</a></li>
+              <li><a href="">
+                <i class="fa-solid fa-square-plus"></i>
+                Crea playlist
+              </a>
+              </li>
               <li><a href="">Nome playlist</a></li>
               <li><a href="">Nome playlist</a></li>
               <li><a href="">Nome playlist</a></li>
@@ -64,7 +68,9 @@
         <footer id="snav-footer" class="">
           <div class="box-download-btn">
             <img src="/img/download.svg" alt="">
+            <span class="d-none">Installa app</span>
           </div>
+          <div class="separator-div d-none"></div>
           <div class="profile-box">
             <div class="profile-img">
               <img src="img/profile.svg" alt="">
@@ -75,13 +81,13 @@
       </nav>
 
       <!-- main, contenente header con pulsante "upgrade" e contenuti principali -->
-      <main class="bdcolor-blu-cadetto">
-        <header class="bdcolor-blu-ardesia">
+      <main class="">
+        <header class="">
           <div class="button-box">            
             <button class="btn-rd btn-rd-hov">Testo del button</button>
           </div>
         </header>
-        <div id="main-contents" class="bdcolor-argento">
+        <div id="main-contents" class="">
           <!-- navbar nel main per scorrere tra sottosezioni differenti contenute in quelle principali della navbar
           laterale -->
           <nav id="nav-main">
@@ -191,7 +197,7 @@
             <li><a href="#"><i class="fa-solid fa-backward-step"></i></a></li>
             <li><a href="#"><i class="fa-regular fa-circle-play"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-forward-step"></i></a></li>
-            <li><a href="#"></a><i class="fa-solid fa-rotate-right"></i></li>
+            <li><a href="#"><i class="fa-solid fa-rotate-right"></i></a></li>
           </ul>
         </div>
         <div class="track-progress flex-row-spb f-alcenter">
