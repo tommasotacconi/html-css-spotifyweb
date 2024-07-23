@@ -26,32 +26,35 @@
     <div class="top-content d-flex">
       <nav id="side-nav" class="flex-column snav-bdc txt-alcenter">
         <header id="snav-header" class="">
-          <img src="img/logo-small.svg" alt="">
+          <img src="img/logo-small.svg" alt="logo spotify" class="sm-d-none">
+          <img src="img/logo.svg" alt="logo spotify with writing" class="d-none sm-d-block">
         </header>
         <div id="snav-contents" class="flex-column ">
           <section id="spotify-sections">
             <ul>
-              <li class="home">
-                <a href=""><img src="/img/home.svg" alt=""></a>
-                <a href="#" class="d-none">Home</a>
+              <li class="home sm-d-flex ">
+                <a class="sm-d-inblock">
+                  <img src="/img/home.svg" alt="">
+                  <span class="d-none sm-d-block">Home</span>
+                </a>
               </li>
               <li class="search">
-                <a href=""><img src="/img/search.svg" alt=""></a>
-                <a href="#" class="d-none">Cerca</a>
+                <a href="" class="sm-d-inblock"><img src="/img/search.svg" alt=""></a>
+                <a href="#" class="d-none sm-d-block">Cerca</a>
               </li>
               <li class="library">
-                <a href=""><img src="/img/libreria.svg" alt=""></a>
-                <a href="#" class="d-none">La tua libreria</a>
+                <a href="" class="sm-d-inblock"><img src="/img/libreria.svg" alt=""></a>
+                <a href="#" class="d-none sm-d-block">La tua libreria</a>
               </li>
             </ul>
           </section>
-          <section id="playlists" class="d-none">
+          <section id="playlists" class="d-none sm-d-block">
+            <h2>PLAYLIST</h2>
+            <a class="create-playlist" href="">
+              <i class="fa-solid fa-square-plus"></i>
+              Crea playlist
+            </a>
             <ul>
-              <li><a href="">
-                <i class="fa-solid fa-square-plus"></i>
-                Crea playlist
-              </a>
-              </li>
               <li><a href="">Nome playlist</a></li>
               <li><a href="">Nome playlist</a></li>
               <li><a href="">Nome playlist</a></li>
@@ -66,16 +69,16 @@
           </section>
         </div>
         <footer id="snav-footer" class="">
-          <div class="box-download-btn">
+          <div class="box-download-btn sm-d-flex f-alcenter">
             <img src="/img/download.svg" alt="">
-            <span class="d-none">Installa app</span>
+            <span class="d-none sm-d-block">Installa app</span>
           </div>
-          <div class="separator-div d-none"></div>
-          <div class="profile-box">
+          <div class="separator-div d-none sm-d-block"></div>
+          <div class="profile-box sm-d-flex f-alcenter">
             <div class="profile-img">
               <img src="img/profile.svg" alt="">
             </div>
-            <span class="d-none">Jhon Doe</span>
+            <span class="d-none sm-d-block">Jhon Doe</span>
           </div>          
         </footer>
       </nav>
@@ -84,7 +87,7 @@
       <main class="main-bdc">
         <header id="main-header" class="main-header-bdc">
           <div class="button-box">            
-            <button class="btn-rd btn-rd-hov">Testo del button</button>
+            <button class="btn-rd btn-rd-hov">EFFETTUA L'UPGRADE</button>
           </div>
         </header>
         <div id="main-contents" class="">

@@ -140,6 +140,10 @@
   display: none;
 }
 
+.d-block {
+  display: block;
+}
+
 /* flex configuration */
 .d-flex {
   display: flex;
@@ -226,7 +230,7 @@
 }
 
 .row.g-1 {
-	margin: 0.5rem;
+	margin: -0.5rem;
 }
 
 .row.g-1 > .col {

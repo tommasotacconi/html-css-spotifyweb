@@ -9,8 +9,8 @@
 :root {
   /* fixed dimension */
   --fr-ht: 120px;
-  --snav-wh: 50px;
-
+  --snav-wh-collap: 50px;
+  --sanv-wh-expan: 250px;
   /*obscured effect  */
   --obs: #949494;
   --opa: 0.6;
@@ -34,10 +34,10 @@ footer {
 }
 
 #side-nav {
-  width: var(--snav-wh);
+  width: var(--snav-wh-collap);
   flex-shrink: 0;
   padding: var(--nav-pd);
-  overflow-x: visible;
+  overflow-x: hidden;
   color: var(--obs)
 }
 
@@ -80,6 +80,7 @@ ul {
   a {
       text-decoration: none;
       color: var(--obs);
+      margin: 15px;
   }  
 }
 
@@ -201,9 +202,17 @@ h1 {
   flex-basis: max-content;
 }
 
-#snav-header img{
-  width: 80%;
+#snav-header {
+  img:first-child{
+  width: 35px;
+  }
+
+  img:last-child {
+    width: 150px;
+  }
 }
+
+
 
 #snav-contents {
   flex: 1;
@@ -216,11 +225,22 @@ h1 {
 
   #playlists {
     flex: 1;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+
+    a.create-playlist {
+      color: var(--obs);
+      text-decoration: none;
+      display: block;
+    }
 
     .fa-square-plus {
       font-size: 3.5rem;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    ul {
+      overflow: auto;
     }
   }
 }
@@ -231,21 +251,30 @@ h1 {
   margin-top: 10px;
 
   img {
-    width: 70%;
+    width: 30px;
   }
 }
 
 #snav-footer {
   padding: 0;
+
+  span {
+    margin-left: 20px;
+  }
+
   
   .box-download-btn {
     margin-bottom: 10px;
 
     img {
-      width: 70%;
+      width: 25px;
       margin-left: -4px;
       opacity: var(--opa);
-    }    
+    }
+    
+    span {
+      color: var(--obs);
+    }
   }
   
   .separator-div {
@@ -255,15 +284,16 @@ h1 {
 
   .profile-box {
     img {
-      width: 70%;
+      width: 22px;
     }
 
     .profile-img{
-      width: 80%;
+      width: 33px;
       border-radius: 50%;
       padding: 2px 0;
       background-color: #aaa;
       margin: 0 auto;
+      text-align: center;
     }
   }
 }
@@ -304,9 +334,9 @@ main header {
 }
 
 .col{
-  width: 50%;
+  flex-basis: 50%;
   min-height: var(--mh-md);
-  border: 1px solid goldenrod;
+  /* border: 3px solid goldenrod; */
 }
 
 .card {
@@ -315,5 +345,78 @@ main header {
 
   h2 {
     font-size: 1.1rem;
+  }
+}
+
+
+/* RESPONSIVE */
+/* small dimension of visualized window  */
+@media screen and (min-width: 700px) {
+  /* generics */
+  .sm-d-block {
+    display: block;
+  }
+
+  .sm-d-inline {
+    display: inline;
+  }
+
+  .sm-d-inblock {
+    display: inline-block;
+  }
+
+  .sm-d-none {
+    display: none;
+  }
+
+  .sm-d-flex {
+    display: flex;
+  }
+
+  /* Principal layout elements */
+  #side-nav {
+    width: var(--sanv-wh-expan);
+    padding: var(--sec-pd-md);
+    text-align: left;
+    
+    img {
+      max-width: none;
+    }
+  }
+
+  /* in footer */
+  #snav-footer {
+    .profile-box .profile-img {
+      margin: 0;
+    }
+  }
+  /* in side nav */
+   
+
+  /* in main-contents */
+}
+
+/* medium dimension of visualized window */
+@media screen and (min-width: 1000px) {
+  /* in footer */
+
+  /* in side nav */
+
+  /* in main-contents */
+  .col {
+    flex-basis: 25%;
+  }
+}
+
+/* large dimension of visualized window */
+@media screen and (min-width: 1200px) {
+  /* in footer */
+
+  /* in side nav */
+
+
+  /* in main-contents */
+  .col {
+    flex-basis: calc(100% / 6);
   }
 }
