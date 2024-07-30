@@ -1,11 +1,11 @@
-/* Css reset */
+/* CSS RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Generics */
+/* GENERICS */
 :root {
   font-size: 14px;
   /* fixed dimension */
@@ -15,7 +15,7 @@
 
   /*obscured effect  */
   --obs: #949494;
-  --opa: 0.6;
+  --obs-inv: 0.6;
 
   /* percent-bar */
   --pbar: #eee;
@@ -102,7 +102,40 @@ h1 {
   background-color: #00000095;
 }
 
-/* Utilities */
+/* UTILITIES */
+/* active class for selected item in nav */
+#side-nav li.active,
+#maincont-nav li.active {
+  position: relative;
+
+  a {
+    color: #fff;
+  }
+
+  img {
+    filter: invert(0);
+  }
+}
+
+#side-nav li.active a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15px;
+  border-left: 2px solid greenyellow;
+}
+
+#maincont-nav li.active a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 50%;
+  translate: -50% 0;
+  border-bottom: 2px solid greenyellow;
+}
+
 .top-content {
   height: calc(100vh - var(--fr-ht));
 }
@@ -138,7 +171,7 @@ h1 {
  
    span:last-child {
      font-size: 0.8rem;
-     color: var(--obs);
+     filter: var(--inv);
    };
   }
 
@@ -217,13 +250,30 @@ h1 {
 #snav-contents {
   flex: 1;
   overflow-x: visible;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 
   img {
-    opacity: var(--opa);
+    filter: invert(var(--obs-inv));
   }
-
-  #playlists {
+  
+  section#spotify-sections ul {
+    list-style-type: none;
+    margin-top: 10px;
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    img {
+      width: 30px;
+    }
+  
+    span {
+      margin-left: 15px;
+    }
+  }
+  
+  section#playlists {
     flex: 1;
     overflow: hidden;
 
@@ -237,10 +287,16 @@ h1 {
       margin-bottom: 20px;
     }
 
+    .create-playlist {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
     .fa-plus {
       font-size: 2.5rem;
       vertical-align: -25%;
-      margin: 10px 10px 20px 0;
+      margin-right: 10px;
       color: #000;
       background-color: var(--obs);
       padding: 9px 12px;
@@ -253,23 +309,6 @@ h1 {
   }
 }
 
-#snav-contents #spotify-sections ul {
-  list-style-type: none;
-  list-style-position: inside;
-  margin-top: 10px;
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  img {
-    width: 30px;
-  }
-
-  span {
-    margin-left: 15px;
-  };
-}
 
 #snav-footer {
   padding: 0;
@@ -415,7 +454,7 @@ main header {
     }
   }
 
-  #snav-contents #spotify-sections ul {
+  #snav-contents section#spotify-sections ul {
     margin-top: 30px;
   }
 
