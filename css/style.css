@@ -387,10 +387,6 @@ main header {
   text-align: center;
 }
 
-/* #upg-btn {
-  padding: 6px 10px;
-} */
-
 /* in main contents */
 #maincont-nav {
   a {
@@ -419,9 +415,37 @@ main header {
   /* background-color: plum; */
   height: 100%;
 
+  .fa-circle-play {
+    display: none;
+  }
+
+  figure:hover {    
+    position: relative;
+
+    .fa-circle-play {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+      font-size: 4rem;
+    }    
+  }
+  
+  figure:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6)
+  }
+
   h2 {
     font-size: 1.1rem;
   }
+
 }
 
 
