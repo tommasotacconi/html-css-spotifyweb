@@ -42,7 +42,7 @@
 }
 
 /* assegna text-align center ai figli */
-.children-txt-align-center {
+.children-txt-alcenter > * {
   text-align: center;
 }
 
